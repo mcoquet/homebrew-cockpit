@@ -17,6 +17,13 @@ cask "cockpit" do
 
   app "Cockpit.app"
 
+  # Remove quarantine attribute since app is unsigned
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-d", "com.apple.quarantine", "#{appdir}/Cockpit.app"],
+                   sudo: false
+  end
+
   zap trash: [
     "~/Library/Application Support/cockpit",
     "~/Library/Preferences/com.cockpit.app.plist",
