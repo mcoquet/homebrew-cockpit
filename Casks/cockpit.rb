@@ -1,14 +1,14 @@
 cask "cockpit" do
-  version "0.4.0"
+  version "0.5.0"
 
   on_arm do
-    sha256 "09aa2c3463dbdf2c099e5cf5b99a095e6a9d97dcef8b352c5fd13a50739e90de"
-    url "https://github.com/mcoquet/cockpit/releases/download/v0.4.0/Cockpit-#{version}-arm64.dmg"
+    sha256 "5ad78d5961e991f01d93b5b0cbd3f88bec24277b9c2ae2d200bf833a699ae694"
+    url "https://github.com/mcoquet/cockpit/releases/download/v0.5.0/Cockpit-#{version}-arm64.dmg"
   end
 
   on_intel do
-    sha256 "ea831338c4a1fccbd190d456b852b28ccf88292b3670a54cc2ce60eae9d3a219"
-    url "https://github.com/mcoquet/cockpit/releases/download/v0.4.0/Cockpit-#{version}-x64.dmg"
+    sha256 "ee9c32fd8e3f9c2df0c4338d60b05ebe6f035e4c724aa5f3c2572e11e5ab457a"
+    url "https://github.com/mcoquet/cockpit/releases/download/v0.5.0/Cockpit-#{version}-x64.dmg"
   end
 
   name "Cockpit"
